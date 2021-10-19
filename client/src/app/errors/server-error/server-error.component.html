@@ -1,0 +1,7 @@
+<h4><p>Something went wrong!! </p></h4>
+
+<ng-container *ngIf="error">
+    <h5 class="text-danger">{{error.message}}</h5>
+    <p>Below is the stack trace</p>
+    <code class="mt-5" style="background-color:beige">{{error.details}}</code>
+</ng-container>
